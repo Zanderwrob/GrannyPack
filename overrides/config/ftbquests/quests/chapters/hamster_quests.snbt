@@ -1,0 +1,101 @@
+{
+    id: "hamster_life",
+    title: "The Hamster Life",
+    icon: "adorablehamsters:hamster_spawn_egg",
+    group: "main",
+    default: false,
+
+    chapters: [
+        {
+            id: "hamster_chapter",
+            title: "Tiny Companions",
+            icon: "minecraft:wheat_seeds",
+
+            quests: [
+
+                {
+                    id: "hamster_q1",
+                    title: "Cucumber Seedling",
+                    icon: "adorablehamsters:cucumber_seeds",
+                    description: ["Every hamster adventure begins with a snack. Find or craft cucumber seeds."],
+                    tasks: [
+                        {
+                            id: "item",
+                            items: [{id: "adorablehamsters:cucumber_seeds"}]
+                        }
+                    ],
+                    rewards: [
+                        {id: "item", item: {id: "adorablehamsters:cucumber_slice", count: 5}}
+                    ]
+                },
+
+                {
+                    id: "hamster_q2",
+                    title: "Tiny Friend",
+                    icon: "adorablehamsters:hamster_spawn_egg",
+                    description: ["Use cucumber slices to tame a hamster. They’ll squeak with joy!"],
+                    dependencies: ["hamster_q1"],
+                    tasks: [
+                        {
+                            id: "item",
+                            items: [{id: "adorablehamsters:hamster_spawn_egg"}]
+                        }
+                    ],
+                    rewards: [
+                        {id: "xp", xp: 100}
+                    ]
+                },
+
+                {
+                    id: "hamster_q3",
+                    title: "Pocket Cheeks",
+                    icon: "adorablehamsters:hamster_food",
+                    description: ["Feed your hamster some Hamster Food Mix and watch their cheek pouches fill."],
+                    dependencies: ["hamster_q2"],
+                    tasks: [
+                        {
+                            id: "item",
+                            items: [{id: "adorablehamsters:hamster_food"}]
+                        }
+                    ],
+                    rewards: [
+                        {id: "item", item: {id: "adorablehamsters:hamster_food", count: 3}}
+                    ]
+                },
+
+                {
+                    id: "hamster_q4",
+                    title: "Shoulder Pilot",
+                    icon: "minecraft:cheese",
+                    description: ["Give your hamster a nibble of cheese to ride on your shoulder!"],
+                    dependencies: ["hamster_q3"],
+                    tasks: [
+                        {
+                            id: "checkmark"
+                        }
+                    ],
+                    rewards: [
+                        {id: "item", item: {id: "minecraft:cheese"}}
+                    ]
+                },
+
+                {
+                    id: "hamster_q5",
+                    title: "Hamster Launch!",
+                    icon: "minecraft:firework_rocket",
+                    description: ["Right-click to launch your hamster at a mob. Squeaky chaos!"],
+                    dependencies: ["hamster_q4"],
+                    tasks: [
+                        {
+                            id: "checkmark"
+                        }
+                    ],
+                    rewards: [
+                        {id: "xp", xp: 500},
+                        {id: "item", item: {id: "minecraft:firework_rocket", count: 3}}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+[
+  {"version":2},
+  {"recipe":"glassential:glass_ethereal","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"blockify_glass_more:lavendersglasspanerecipe_2","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"minecraft:blue_terracotta","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"travelersbackpack:iron_golem_smithing","recipeType":"minecraft:smithing","bookmarkType":"RECIPE"}
+]

@@ -1,0 +1,20 @@
+{
+	icon: {
+		components: {
+			"ftbquests:missing_item": "modern_industrialization:steam_quarry"
+		}
+		id: "ftbquests:missing_item"
+	}
+	id: "0F18B2B15BE4FF2B"
+	loot_size: 1
+	order_index: 31
+	rewards: [{
+		count: 16
+		id: "2ECCA6087D445E01"
+		item: {
+			count: 1
+			id: "minecraft:copper_ingot"
+		}
+		weight: 1.5f
+	}]
+}

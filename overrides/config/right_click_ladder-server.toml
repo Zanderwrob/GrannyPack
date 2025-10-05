@@ -1,0 +1,18 @@
+[placement]
+	#If true, allow placing ladders into air/water anywhere (classic 'floaty' behavior).
+	#If false, ladders must be supported by a backing block (vanilla behavior).
+	floaty_placement = true
+
+[collapse]
+	#If true, breaking a rung collapses ONLY the contiguous unsupported span until a supported rung is reached.
+	collapse_floaty_spans = true
+	#If true (and collapse_floaty_spans = false), break collapses the ENTIRE contiguous column ONLY when there are zero anchors anywhere in that column.
+	collapse_only_if_no_anchor_anywhere = false
+
+[integration]
+	#If true, do nothing when another mod has already canceled the interaction (claims/anti-cheat).
+	respect_claims = true
+
+[debug]
+	#Lightweight console logs for field debugging.
+	debug_log = false

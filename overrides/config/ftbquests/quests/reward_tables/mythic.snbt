@@ -1,0 +1,36 @@
+{
+	id: "481E10AEAC95C550"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ id: "1DEE92FAC91278BB", item: { count: 1, id: "mekanism:pellet_antimatter" } }
+		{
+			count: 3
+			id: "20488B131E9DD296"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_induction_cell"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 3
+			id: "2DC9300719C4DC3F"
+			item: {
+				count: 1
+				id: "mekanism:ultimate_induction_provider"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 36
+			id: "091CD07B22DDD080"
+			item: {
+				count: 1
+				id: "powah:reactor_nitro"
+			}
+			weight: 2.0f
+		}
+	]
+	use_title: true
+}
